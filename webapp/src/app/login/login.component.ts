@@ -1,4 +1,5 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,17 +7,28 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-    public errorStr: string = '';
-    private password: string = '';
+    private errorStr: string;
+    private password: string;
+    passwordForm: FormGroup;
 
-    constructor() { }
-
-    ngOnInit() {
+    constructor(formBuilder: FormBuilder) { 
+        this.passwordForm = formBuilder.group({
+            'password': ['', Validators.compose([Validators.required, Validators.minLength(3)])],
+        });
     }
 
-    public onLogin() {
-        if (this.password === 'test') {
-            // proceed to login
+    ngOnInit() {
+        this.password = '';
+        this.errorStr = '';
+    }
+
+    private onFailedPasswordAttempt() {
+        this.errorStr = 'Error String';
+    }
+
+    private verifyPassword(password: string) {   // TODO: grab password from somewhere else
+        if (password === 'test') {
+            // transition to next page
         }
         else {
             this.onFailedPasswordAttempt();
@@ -26,14 +38,11 @@ export class LoginComponent implements OnInit {
         this.password = '';
     }
 
-    private onFailedPasswordAttempt() {
-        this.errorStr = 'Error String';
-    }
-
     @HostListener('document:keypress', ['$event'])
     handleKeyboardEvent(event: KeyboardEvent) {
-        if (event.code === "Enter" && this.password.length > 0) {
-            this.onLogin();
+        if (event.code === "Enter" && this.passwordForm.valid) {
+            console.log(this.passwordForm.value.password);
+            this.verifyPassword(this.passwordForm.value.password);
         }
     }
 }
