@@ -2,11 +2,8 @@
   <div class="card-block">
 
 	<form [formGroup]="passwordForm" novalidate>
-	  <input placeholder="Take a note..." class="form-control" name="passwordForm" formControlName="password">
+	  <input placeholder="Enter password" class="form-control" name="passwordForm" formControlName="password">
 	</form>
-  	<!--
-    <input type="password" placeholder="What's the password?" class="form-control" [(ngModel)]="password">
-	-->
   </div>
   <div class="login-error">
   	{{ errorStr }}

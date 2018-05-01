@@ -1,5 +1,7 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +13,7 @@ export class LoginComponent implements OnInit {
     private password: string;
     passwordForm: FormGroup;
 
-    constructor(formBuilder: FormBuilder) { 
+    constructor(private formBuilder: FormBuilder, private route: ActivatedRoute, private router: Router) {
         this.passwordForm = formBuilder.group({
             'password': ['', Validators.compose([Validators.required, Validators.minLength(3)])],
         });
@@ -29,8 +31,8 @@ export class LoginComponent implements OnInit {
     private verifyPassword(password: string) {   // TODO: grab password from somewhere else
         if (password === 'test') {
             // transition to next page
-        }
-        else {
+            this.router.navigate(['']);
+        } else {
             this.onFailedPasswordAttempt();
         }
 
@@ -40,8 +42,7 @@ export class LoginComponent implements OnInit {
 
     @HostListener('document:keypress', ['$event'])
     handleKeyboardEvent(event: KeyboardEvent) {
-        if (event.code === "Enter" && this.passwordForm.valid) {
-            console.log(this.passwordForm.value.password);
+        if (event.code === 'Enter' && this.passwordForm.valid) {
             this.verifyPassword(this.passwordForm.value.password);
         }
     }
