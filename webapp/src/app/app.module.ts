@@ -10,6 +10,10 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { CodeComponent } from './code/code.component';
 import { BiographyComponent } from './biography/biography.component';
+import { ProjectComponent } from './project/project.component';
+
+// https://github.com/VadimDez/ng2-pdf-viewer
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 @NgModule({
   declarations: [
@@ -20,13 +24,16 @@ import { BiographyComponent } from './biography/biography.component';
     ProjectsComponent,
     ContactComponent,
     CodeComponent,
-    BiographyComponent
+    BiographyComponent,
+    ProjectComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
