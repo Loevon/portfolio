@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  private projects = [];
   constructor() { }
 
   ngOnInit() {
+    this.projects = [
+
+    ];
   }
 
 }
