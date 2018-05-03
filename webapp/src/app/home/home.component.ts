@@ -23,15 +23,15 @@ export class HomeComponent implements OnInit {
         active: true
       },
       {
-        name: 'Resume',
-        route: 'home/resume',
-        tag: 'resume',
-        active: false
-      },
-      {
         name: 'Projects',
         route: 'home/projects',
         tag: 'projects',
+        active: false
+      },
+      {
+        name: 'Resume',
+        route: 'home/resume',
+        tag: 'resume',
         active: false
       },
       {
