@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-project',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
-
+  @Input() project: any;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  private openLink(link: string) {
+    // todo: transition to another webpage
+  }
 }

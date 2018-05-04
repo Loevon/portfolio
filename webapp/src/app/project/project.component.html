@@ -1,22 +1,24 @@
 <div class="project">
   <div class="project-img">
-    <img src="./assets/igt.png">
+    <img [src]=project.img>
     <div class="project-links">
-      <div class="project-link">
-        test
+      <div class="project-link" (click)="openLink('project.repoLink')">
+        More Information
+      </div>
+      <div class="project-link" (click)="openLink('project.repoLink')">
+        View Code
       </div>
     </div>
   </div>
   <div class="project-desc">
     <div class="project-title">
-      IGT: Aurora Performance Intel
+      {{ project.name }}
     </div>
     <div class="project-subtitle">
-      Ionic, Spring Boot
+      {{ project.tools }}
     </div>
     <p>
-      This is an extra long description of the project. This project will consist of a breif summary of what it was,
-      what my role was, and the tech used.
+      {{ project.description }}
     </p>
   </div>
 </div>
