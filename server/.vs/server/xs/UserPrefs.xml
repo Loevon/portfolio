@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{0186A045-A529-450A-88E9-7EE051BAB38C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="server/Controllers/ProjectsController.cs">
+    <Files>
+      <File FileName="server/Controllers/ValuesController.cs" Line="26" Column="27" />
+      <File FileName="server/Controllers/ProjectsController.cs" Line="20" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.server PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
