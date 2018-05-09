@@ -8,6 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using server.Entities;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+using Microsoft.EntityFrameworkCore;
 
 namespace server
 {
@@ -24,6 +27,10 @@ namespace server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+       
+            // postgresql connection
+			string dbStr = Configuration.GetConnectionString("DefaultConnection");
+			services.AddEntityFrameworkNpgsql().AddDbContext<ProjectContext>(options => options.UseNpgsql(dbStr));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

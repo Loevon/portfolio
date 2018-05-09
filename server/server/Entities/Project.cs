@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace server.Entities
 {
     public class Project
     {
-        private int id { get; set; }
+		// private Guid id;
         private string title { get; set; }
         private string tools { get; set; }
         private string description { get; set; }
@@ -15,5 +17,13 @@ namespace server.Entities
         public Project()
         {
         }
+
+        [Key]
+		public Guid ID { get; set; }
+
+
+		public void GetSomehting() {
+			
+		}
     }
 }

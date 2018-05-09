@@ -1,0 +1,11 @@
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.csprojResolveAssemblyReference.cache
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.csproj.CoreCompileInputs.cache
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.AssemblyInfoInputs.cache
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.AssemblyInfo.cs
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/bin/Debug/netcoreapp2.0/server.deps.json
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/bin/Debug/netcoreapp2.0/server.runtimeconfig.json
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/bin/Debug/netcoreapp2.0/server.runtimeconfig.dev.json
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/bin/Debug/netcoreapp2.0/server.dll
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/bin/Debug/netcoreapp2.0/server.pdb
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.dll
+/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/obj/Debug/netcoreapp2.0/server.pdb
