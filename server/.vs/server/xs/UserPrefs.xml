@@ -1,9 +1,12 @@
 ﻿<Properties StartupConfiguration="{0186A045-A529-450A-88E9-7EE051BAB38C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="server/Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="server/Properties/launchSettings.json">
     <Files>
-      <File FileName="server/Controllers/ValuesController.cs" Line="18" Column="9" />
+      <File FileName="server/Controllers/ValuesController.cs" Line="8" Column="38" />
       <File FileName="server/Controllers/ProjectsController.cs" Line="31" Column="11" />
       <File FileName="server/Entities/Project.cs" Line="20" Column="1" />
+      <File FileName="server/Startup.cs" Line="41" Column="1" />
+      <File FileName="server/Program.cs" Line="20" Column="32" />
+      <File FileName="server/Properties/launchSettings.json" Line="30" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

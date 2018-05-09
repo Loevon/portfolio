@@ -1,0 +1,43 @@
+.project {
+  margin:20px;
+  background-color: white;
+  min-height:350px;
+  min-width: 400px;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size:24px;
+  background-color: white;
+  padding:10px;
+  padding-bottom:0px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.project-subtitle {
+  color:red;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.project-img {
+  float: left;
+  margin-right:20px;
+}
+
+.project-links {
+  background-color: dodgerblue;
+  min-height:100px;
+}
+
+.project-link {
+  color: white;
+  padding: 10px;
+}
+
+.project-desc {
+  padding:15px;
+  margin-right:20px;
+  text-align: left;
+}

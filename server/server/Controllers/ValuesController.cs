@@ -4,6 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
+/*
+ * This is just a template, delete me
+ * 
+ * 
+ */
 namespace server.Controllers
 {
     [Route("api/[controller]")]
