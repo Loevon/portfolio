@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <Compile Remove="Entities\EmptyClass.cs" />
-    <Compile Remove="Controllers\ProjectsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Project\Create.cshtml" />
