@@ -6,15 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private projects: Array<any> = [];
+  private projects: Array<Projects> = [];
   constructor() { }
 
   ngOnInit() {
     // TODO: load projects from datasource
-    this.projects = [
+    tempProjects = [
       {
         name: 'IGT: Aurora Performance Intel',
-        img: './assets/igt.png',
+        image: './assets/igt.png',
         tools: 'Ionic, Spring Boot',
         description: 'This is an extra long description of the project. This project will consist of a brief summary of what it was,\n' +
         ' what my role was, and the tech used.',
@@ -22,6 +22,10 @@ export class ProjectsComponent implements OnInit {
         infoLink: ''
       }
     ];
+
+    for (let p of tempProjects) {
+      projects.push(new Project(p));
+    }
   }
 }
 
