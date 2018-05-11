@@ -11,6 +11,6 @@ namespace server.Entities
 			
         }
         
-		public DbSet<Project> Todos { set; get; }
+		public DbSet<Project> Projects { set; get; }
     }
 }

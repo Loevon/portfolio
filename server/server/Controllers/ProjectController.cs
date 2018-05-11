@@ -12,19 +12,17 @@ namespace server.Controllers
 	[Route("api/[controller]")]
     public class ProjectController : Controller
     {
+
+        /*
+
+
         private readonly ProjectContext _context;
 
         public ProjectController(ProjectContext context)
         {
             _context = context;
         }
-
-		// GET api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+       
 
         // GET: Project
         public async Task<IActionResult> Index()
@@ -157,5 +155,7 @@ namespace server.Controllers
         {
             return _context.Todos.Any(e => e.ID == id);
         }
+
+*/
     }
 }

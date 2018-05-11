@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using server.Entities;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,12 +11,20 @@ namespace server.Controllers
 {
     [Route("api/[controller]")]
     public class ProjectsController : Controller
-    {
+	{
+		private readonly ProjectContext _context;
+
+		public ProjectsController(ProjectContext projectContext) {
+			this._context = projectContext;
+		}
+        
+
         // GET: api/values
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
+		public IEnumerable<Project> Get()
+		{
+			IEnumerable<Project> projects = _context.Projects;
+			return projects;
         }
 
         // GET api/values/5
