@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./biography.component.scss']
 })
 export class BiographyComponent implements OnInit {
+  title: string = '';
 
   constructor() { }
 
   ngOnInit() {
+    this.title = 'Bio';
   }
 
 }

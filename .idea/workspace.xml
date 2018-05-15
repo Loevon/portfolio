@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93e8a814-f765-43ae-abca-45c5322de13c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.keystream" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.keystream" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.keystream.len" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.keystream.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.len" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata.len" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata_i" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata_i" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata_i.len" afterPath="$PROJECT_DIR$/webapp/.idea/dataSources/00a2cecd-2ddd-4ec8-8e01-a0204822bdb4/_metadata_/metadata_i.len" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/webapp/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/home/home.component.ts" afterPath="$PROJECT_DIR$/webapp/src/app/home/home.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/project/project.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/project/project.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/projects/projects.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/projects/projects.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/resume/resume.component.html" afterPath="$PROJECT_DIR$/webapp/src/app/resume/resume.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/app/resume/resume.component.scss" afterPath="$PROJECT_DIR$/webapp/src/app/resume/resume.component.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapp/src/styles.scss" afterPath="$PROJECT_DIR$/webapp/src/styles.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,7 +31,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1439" />
     <option name="height" value="826" />
@@ -53,10 +53,10 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,14 +174,15 @@
       <updated>1525210003982</updated>
       <workItem from="1525210007565" duration="78000" />
       <workItem from="1525298919760" duration="655000" />
+      <workItem from="1526354474342" duration="29000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="733000" />
+    <option name="totallyTimeSpent" value="762000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1439" height="826" extended-state="0" />
+    <frame x="0" y="23" width="1439" height="826" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Azure Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />

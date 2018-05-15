@@ -11,6 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { CodeComponent } from './components/code/code.component';
 import { BiographyComponent } from './components/biography/biography.component';
 import { ProjectComponent } from './components/project/project.component';
+import { Project } from './models/project';
 
 // https://github.com/VadimDez/ng2-pdf-viewer
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -27,6 +28,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     BiographyComponent,
     ProjectComponent,
 
+    // models
+   // Project,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Inject, OnInit} from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-code',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: any) {
+    document.location.href = 'https://github.com/Loevon';
+  }
 
   ngOnInit() {
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Project} from "../../models/project";
+
 
 @Component({
   selector: 'app-projects',
@@ -6,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  private projects: Array<Projects> = [];
+  private projects: Array<Project> = [];
   constructor() { }
 
   ngOnInit() {
     // TODO: load projects from datasource
-    tempProjects = [
+    const tempProjects = [
       {
         name: 'IGT: Aurora Performance Intel',
         image: './assets/igt.png',
@@ -24,7 +26,7 @@ export class ProjectsComponent implements OnInit {
     ];
 
     for (let p of tempProjects) {
-      projects.push(new Project(p));
+      this.projects.push(new Project(p));
     }
   }
 }
