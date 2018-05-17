@@ -12,8 +12,8 @@
     </database>
     <schema id="4" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-05-09.14:11:29.250</IntrospectionTimestamp>
-      <IntrospectionStateNumber>625</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-05-17.12:31:27.488</IntrospectionTimestamp>
+      <IntrospectionStateNumber>646</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -32,57 +32,67 @@
     <schema id="9" parent="2" name="information_schema">
       <ObjectId>12087</ObjectId>
     </schema>
-    <sequence id="10" parent="4" name="projects_project_id_seq">
-      <ObjectId>16386</ObjectId>
-      <StateNumber>625</StateNumber>
+    <sequence id="10" parent="4" name="projects_id_seq">
+      <ObjectId>16409</ObjectId>
+      <StateNumber>638</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <BelongsToColumn>1</BelongsToColumn>
     </sequence>
     <table id="11" parent="4" name="projects">
-      <ObjectId>16388</ObjectId>
-      <StateNumber>625</StateNumber>
+      <ObjectId>16411</ObjectId>
+      <StateNumber>646</StateNumber>
     </table>
-    <column id="12" parent="11" name="project_id">
+    <column id="12" parent="11" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>625</StateNumber>
-      <SequenceName>projects_project_id_seq</SequenceName>
-      <DefaultExpression>nextval(&apos;projects_project_id_seq&apos;::regclass)</DefaultExpression>
+      <StateNumber>638</StateNumber>
+      <SequenceName>projects_id_seq</SequenceName>
+      <DefaultExpression>nextval(&apos;projects_id_seq&apos;::regclass)</DefaultExpression>
     </column>
     <column id="13" parent="11" name="title">
       <Position>2</Position>
-      <DataType>varchar(100)|0</DataType>
-      <StateNumber>625</StateNumber>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>646</StateNumber>
     </column>
     <column id="14" parent="11" name="subtitle">
       <Position>3</Position>
-      <DataType>varchar(100)|0</DataType>
-      <StateNumber>625</StateNumber>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>641</StateNumber>
     </column>
     <column id="15" parent="11" name="description">
       <Position>4</Position>
-      <DataType>varchar(100)|0</DataType>
-      <StateNumber>625</StateNumber>
+      <DataType>varchar(1000)|0</DataType>
+      <StateNumber>642</StateNumber>
     </column>
-    <column id="16" parent="11" name="repository">
+    <column id="16" parent="11" name="repo">
       <Position>5</Position>
-      <DataType>varchar(100)|0</DataType>
-      <StateNumber>625</StateNumber>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>643</StateNumber>
     </column>
-    <column id="17" parent="11" name="info">
+    <column id="17" parent="11" name="link">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
-      <StateNumber>625</StateNumber>
+      <StateNumber>644</StateNumber>
     </column>
-    <index id="18" parent="11" name="projects_pkey">
-      <ObjectId>16395</ObjectId>
-      <ColNames>project_id</ColNames>
+    <column id="18" parent="11" name="image">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+      <StateNumber>645</StateNumber>
+    </column>
+    <index id="19" parent="11" name="projects_id_uindex">
+      <ObjectId>16417</ObjectId>
+      <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="19" parent="11" name="projects_pkey">
-      <ObjectId>16396</ObjectId>
-      <ColNames>project_id</ColNames>
+    <index id="20" parent="11" name="projects_pkey">
+      <ObjectId>16415</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="21" parent="11" name="projects_pkey">
+      <ObjectId>16416</ObjectId>
+      <ColNames>id</ColNames>
       <UnderlyingIndexName>projects_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>

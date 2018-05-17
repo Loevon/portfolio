@@ -1,16 +1,18 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace server.Entities
 {
-	public class ProjectContext : DbContext
+    public class ProjectContext : DbContext
     {
-		public ProjectContext(DbContextOptions<ProjectContext> dbContextOptions) 
-			: base(dbContextOptions)
+        public ProjectContext(DbContextOptions<ProjectContext> options) : base(options)
         {
-			
+
         }
-        
-		public DbSet<Project> Projects { set; get; }
+
+        public DbSet<Project> Projects { get; set; }
     }
 }

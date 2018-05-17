@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{0186A045-A529-450A-88E9-7EE051BAB38C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="server/Entities/Project.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="server/Controllers/ProjectsController.cs">
     <Files>
-      <File FileName="server/Controllers/ProjectsController.cs" Line="27" Column="1" />
-      <File FileName="server/Entities/ProjectContext.cs" Line="11" Column="4" />
-      <File FileName="server/Entities/Project.cs" Line="11" Column="36" />
-      <File FileName="server/Properties/launchSettings.json" Line="30" Column="1" />
-      <File FileName="server/Program.cs" Line="24" Column="6" />
-      <File FileName="server/Startup.cs" Line="32" Column="1" />
+      <File FileName="server/Startup.cs" Line="24" Column="40" />
+      <File FileName="server/Program.cs" Line="26" Column="1" />
+      <File FileName="server/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="server/appsettings.json" Line="19" Column="1" />
+      <File FileName="server/Properties/launchSettings.json" Line="15" Column="32" />
+      <File FileName="server/Entities/ProjectContext.cs" Line="19" Column="1" />
+      <File FileName="server/Entities/Project.cs" Line="12" Column="6" />
+      <File FileName="server/Controllers/ProjectsController.cs" Line="45" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/Controllers/ProjectsController.cs" relfile="server/Controllers/ProjectsController.cs" line="27" column="1" />
+      <Breakpoint file="/Users/compositeapps/Desktop/Projects/Test/hogetvedt/portfolio/server/server/Controllers/ProjectsController.cs" relfile="server/Controllers/ProjectsController.cs" line="48" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.server PreferredExecutionTarget="MonoDevelop.Default" />

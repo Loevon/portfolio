@@ -14,7 +14,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace server
 {
-    public class Startup
+	public class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -27,10 +27,9 @@ namespace server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-       
-            // postgresql connection
-			string dbStr = Configuration.GetConnectionString("DefaultConnection");
-			services.AddEntityFrameworkNpgsql().AddDbContext<ProjectContext>(options => options.UseNpgsql(dbStr));
+            string dbStr = Configuration.GetConnectionString("DefaultConnection");
+
+            services.AddEntityFrameworkNpgsql().AddDbContext<ProjectContext>(options => options.UseNpgsql(dbStr));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Project} from "../../models/project";
+import {Project} from '../../models/project';
 
 
 @Component({
@@ -15,13 +15,13 @@ export class ProjectsComponent implements OnInit {
     // TODO: load projects from datasource
     const tempProjects = [
       {
-        name: 'IGT: Aurora Performance Intel',
+        title: 'IGT: Aurora Performance Intel',
         image: './assets/igt.png',
-        tools: 'Ionic, Spring Boot',
+        subtitle: 'Ionic, Spring Boot',
         description: 'This is an extra long description of the project. This project will consist of a brief summary of what it was,\n' +
         ' what my role was, and the tech used.',
-        repoLink: '',
-        infoLink: ''
+        repo: '',
+        link: ''
       }
     ];
 

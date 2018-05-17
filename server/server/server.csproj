@@ -22,5 +22,6 @@
 
   <ItemGroup>
     <Compile Remove="Entities\Projects.cs" />
+    <Compile Remove="Controllers\ProjectController.cs" />
   </ItemGroup>
 </Project>

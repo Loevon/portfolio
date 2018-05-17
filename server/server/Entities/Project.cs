@@ -1,30 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace server.Entities
 {
+	[Table("projects")]
     public class Project
     {
-		[Key]
-		public int id;
-		public string title { get; set; }
-		public string tools { get; set; }
-		public string description { get; set; }
-		public string repository { get; set; }
-		public string link { get; set; }
-
-        // TODO: do image here
-        
-        public Project()
-        {
-        }
-
-  //      [Key]
-		//public int ID { get; set; }
-
-
-		//public void GetSomehting() {
-			
-		//}
+        [Key]
+        public int id { get; set; }
+        public String title { get; set; }
+		public String subtitle { get; set; }
+		public String description { get; set; }
+		public String repo { get; set; }
+		public String link { get; set; }
+		public String image { get; set; }
     }
 }
