@@ -1,6 +1,6 @@
 <div class="project">
   <div class="project-img">
-    <img [src]=project.image>
+    <img [src]=getImgLink(project.image)>
     <div class="project-links">
       <div class="project-link" (click)="openLink('project.repoLink')">
         More Information

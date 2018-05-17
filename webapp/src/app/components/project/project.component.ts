@@ -15,4 +15,8 @@ export class ProjectComponent implements OnInit {
   private openLink(link: string) {
     // todo: transition to another webpage
   }
+
+  getImgLink(img: string) {
+    return './assets/' + img;
+  }
 }

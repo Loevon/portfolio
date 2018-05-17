@@ -12,6 +12,7 @@ import { CodeComponent } from './components/code/code.component';
 import { BiographyComponent } from './components/biography/biography.component';
 import { ProjectComponent } from './components/project/project.component';
 import { Project } from './models/project';
+import { HttpClientModule } from '@angular/common/http';
 
 // https://github.com/VadimDez/ng2-pdf-viewer
 import { PdfViewerModule } from 'ng2-pdf-viewer';
@@ -36,7 +37,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    PdfViewerModule
+    PdfViewerModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

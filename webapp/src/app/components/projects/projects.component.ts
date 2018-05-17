@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Project} from '../../models/project';
+import {RepositoryService} from '../../services/repository.service';
 
 
 @Component({
@@ -9,23 +10,20 @@ import {Project} from '../../models/project';
 })
 export class ProjectsComponent implements OnInit {
   private projects: Array<Project> = [];
-  constructor() { }
+  private repository: RepositoryService;
+
+  constructor(private repo: RepositoryService) {
+    this.repository = repo;
+  }
 
   ngOnInit() {
-    // TODO: load projects from datasource
-    const tempProjects = [
-      {
-        title: 'IGT: Aurora Performance Intel',
-        image: './assets/igt.png',
-        subtitle: 'Ionic, Spring Boot',
-        description: 'This is an extra long description of the project. This project will consist of a brief summary of what it was,\n' +
-        ' what my role was, and the tech used.',
-        repo: '',
-        link: ''
-      }
-    ];
+    this.repository
+      .getProjects('http://localhost:5000/api/projects').subscribe((data: Array<Project>) => {
+      this.projects = data;
+    });
 
-    for (let p of tempProjects) {
+
+    for (let p of this.projects) {
       this.projects.push(new Project(p));
     }
   }
