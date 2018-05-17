@@ -1,12 +1,11 @@
-CREATE TABLE public.projects
+CREATE TABLE public.Projects
 (
-	project_id SERIAL PRIMARY KEY,
-	title VARCHAR(100),
-	subtitle VARCHAR(100),
-	description VARCHAR(250),
-	repository VARCHAR(100),
-	info VARCHAR(100)
+    id SERIAL PRIMARY KEY NOT NULL,
+    title VARCHAR(50),
+    subtitle VARCHAR(50),
+	description VARCHAR(1000),
+	repository VARCHAR(30),
+	info VARCHAR(30),
+	image VARCHAR(20)
 );
-
-
-
+CREATE UNIQUE INDEX Projects_id_uindex ON public.Projects (id);
