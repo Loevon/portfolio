@@ -13,24 +13,3 @@ services:
       POSTGRES_DB: docktin
     volumes:
       - ./var/postgres:/var/postgres/config
-      # - /srv/docker/postgresql:/var/lib/postgresql
-
-# version: '3.1'
-
-# services:
-#   postgresql:
-#     container_name: posgresql_portfolio
-#     image: postgres
-#     restart: always
-#     environment:
-#       POSTGRES_USER: mhogetvedt
-#       POSTGRES_PASSWORD: mhogetvedt
-#       POSTGRES_DB: docktin
-
-#   adminer:
-#     image: adminer
-#     restart: always
-#     ports:
-#     - "5432:5432"
-#     expose:
-#     - 5432

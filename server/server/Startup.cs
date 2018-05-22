@@ -27,9 +27,18 @@ namespace server
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+			services.AddCors();
+
             string dbStr = Configuration.GetConnectionString("DefaultConnection");
 
             services.AddEntityFrameworkNpgsql().AddDbContext<ProjectContext>(options => options.UseNpgsql(dbStr));
+
+			services.AddCors(o => o.AddPolicy("Origin", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,8 +47,7 @@ namespace server
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-
+            }         
             app.UseMvc();
         }
     }

@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using server.Entities;
+using Microsoft.AspNetCore.Cors;
 
 namespace server.Controllers
 {
+	[EnableCors("Origin")]
     [Produces("application/json")]
     [Route("api/Projects")]
     public class ProjectsController : Controller
