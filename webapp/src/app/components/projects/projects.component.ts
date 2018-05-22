@@ -11,6 +11,7 @@ import {RepositoryService} from '../../services/repository.service';
 export class ProjectsComponent implements OnInit {
   private projects: Array<Project> = [];
   private repository: RepositoryService;
+  private serverUrl = '206.189.218.72';
 
   constructor(private repo: RepositoryService) {
     this.repository = repo;
@@ -18,7 +19,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.repository
-      .getProjects('http://localhost:5000/api/projects').subscribe((data: Array<Project>) => {
+      .getProjects('http://' + this.serverUrl + ':5000/api/projects').subscribe((data: Array<Project>) => {
       this.projects = data;
     });
 
