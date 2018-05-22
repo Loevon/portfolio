@@ -12,6 +12,7 @@ export class ProjectsComponent implements OnInit {
   private projects: Array<Project> = [];
   private repository: RepositoryService;
   private serverUrl = '206.189.218.72';
+  private localUrl = 'localhost';
 
   constructor(private repo: RepositoryService) {
     this.repository = repo;
@@ -19,7 +20,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.repository
-      .getProjects('http://' + this.serverUrl + ':5000/api/projects').subscribe((data: Array<Project>) => {
+      .getProjects('http://' + this.localUrl + ':5000/api/projects').subscribe((data: Array<Project>) => {
       this.projects = data;
     });
 
